@@ -25,14 +25,18 @@ public class Hej extends Application implements EventHandler<ActionEvent> {
 
         root = new Group(buttonAdd);
 
-        mainScene = new Scene(root); 
+        mainScene = new Scene(root);
+
+        primaryStage.setScene(mainScene);
+        primaryStage.show();
     }
 
     @Override
     public void handle(ActionEvent event) {
         // TODO Auto-generated method stub
-        if (event.getSource() == buttonAdd;) 
-        { 
+        if (event.getSource() == buttonAdd)
+            ;
+        {
             System.out.println("Du tryckte");
         }
     }
